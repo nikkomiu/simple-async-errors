@@ -1,0 +1,26 @@
+{
+  "name": "express-async-errors",
+  "version": "0.0.0-alpha",
+  "description": "Express Async Error Handler for Controllers",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/nikko.miu/express-async-errors.git"
+  },
+  "scripts": {
+    "test": "jest --config jest.config.json",
+    "lint": "eslint src"
+  },
+  "author": "Nikko Miu <nikkoamiu@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "jest-simple-summary": "^0.2.0"
+  }
+}
