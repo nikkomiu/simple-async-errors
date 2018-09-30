@@ -1,12 +1,12 @@
 {
-  "name": "express-async-errors",
+  "name": "simple-async-errors",
   "version": "0.0.0-alpha",
-  "description": "Express Async Error Handler for Controllers",
+  "description": "Async Error Handler for Controllers",
   "main": "src/index.js",
   "module": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/nikko.miu/express-async-errors.git"
+    "url": "https://gitlab.com/nikko.miu/simple-async-errors.git"
   },
   "scripts": {
     "test": "jest --config jest.config.json",
