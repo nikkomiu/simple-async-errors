@@ -17,7 +17,9 @@ npm install --save simple-async-errors
 Async functions are supported and will call a catcher for you when they throw:
 
 ```js
-module.exports = require('simple-async-errors')({
+const asyncErrorWrapper = require('simple-async-errors');
+
+module.exports = asyncErrorWrapper({
   index: (req, res) => res.send('yay!')
 });
 ```
@@ -26,6 +28,8 @@ Async functions on static and non-static memebers of classes
 can be used as well:
 
 ```js
+const asyncErrorWrapper = require('simple-async-errors');
+
 class TestController {
   async test(req, res) {
     res.send('yay');
@@ -36,7 +40,7 @@ class TestController {
   }
 }
 
-module.exports = require('simple-async-errors')(TestController);
+module.exports = asyncErrorWrapper(TestController);
 ```
 
 They can also all be rolled up into deeply nested objects and still work!
@@ -45,6 +49,8 @@ Doing this will allow you to only run the async handler in a single location
 instead of spread throughout all of your route files:
 
 ```js
+const asyncErrorWrapper = require('simple-async-errors');
+
 // Error handler for all requests
 const errorHandler = (req, res) => (err) => {
   switch (err.name) {
@@ -63,7 +69,7 @@ const errorHandler = (req, res) => (err) => {
   }
 };
 
-module.exports = require('simple-async-errors')({
+module.exports = asyncErrorWrapper({
   TestController: require('./test'),
   HomeController: require('./home'),
 }, errorHandler);
