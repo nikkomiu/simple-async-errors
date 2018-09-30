@@ -9,7 +9,7 @@ stop `UnhandledPromiseRejection` errors from showing up anymore.
 Install Async Errors using `npm`:
 
 ```
-npm install --save-dev simple-async-errors
+npm install --save simple-async-errors
 ```
 
 ## Usage
