@@ -14,7 +14,15 @@
   },
   "author": "Nikko Miu <nikkoamiu@gmail.com>",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "async",
+    "UnhandledPromiseRejection",
+    "promise",
+    "erorr",
+    "error-handler",
+    "express.js",
+    "express"
+  ],
   "dependencies": {},
   "devDependencies": {
     "eslint": "^5.6.1",
